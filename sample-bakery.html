@@ -80,7 +80,7 @@ scene.add(grp);
 const n=500,pos=new Float32Array(n*3);
 for(let i=0;i<n;i++){const d=6+Math.random()*9,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);pos[i*3]=d*Math.sin(b)*Math.cos(a);pos[i*3+1]=d*Math.sin(b)*Math.sin(a);pos[i*3+2]=d*Math.cos(b)}
 const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
-const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xF08BA80xffffff,size:.05,transparent:true,opacity:.7}));scene.add(pts);
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xF08BA8,size:.05,transparent:true,opacity:.7}));scene.add(pts);
 function size(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
 addEventListener('resize',size);size();
 const bar=document.getElementById('pg'),hero=document.querySelector('.hero>div');

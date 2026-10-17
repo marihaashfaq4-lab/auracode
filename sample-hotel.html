@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Marigold Suites | Concept project</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@400;500&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF7F0;--ink:#1B2434;--mute:#5F6B7D;--line:#E7E0D0;--card:#FFFFFF;--acc:#8A5A12;--acc2:#F3E6C8;--on:#FFFFFF;--hf:system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1623;--ink:#F3EEE2;--mute:#A8B0BF;--line:#27324A;--card:#162033;--acc:#E0B25A;--acc2:#2A3350;--on:#0F1623;}}
+:root[data-theme="dark"]{--bg:#0F1623;--ink:#F3EEE2;--mute:#A8B0BF;--line:#27324A;--card:#162033;--acc:#E0B25A;--acc2:#2A3350;--on:#0F1623;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+h1,h2,h3{font-family:system-ui,sans-serif;margin:0;line-height:1.15}
+.w{max-width:980px;margin:0 auto;padding:0 20px}.tag{background:var(--ink);color:var(--bg);text-align:center;font-size:13px;padding:6px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav b{font:700 22px system-ui,sans-serif}nav a{color:var(--mute);text-decoration:none;margin-left:18px;font-size:15px}
+.hero{padding:56px 0 48px}.hero h1{font-size:clamp(34px,6vw,58px);max-width:620px}.hero p{color:var(--mute);max-width:480px;margin:16px 0 24px;font-size:18px}
+.btn,button{background:var(--acc);color:var(--on);border:0;border-radius:999px;padding:11px 22px;font:500 15px inherit;cursor:pointer;text-decoration:none;display:inline-block}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+section{padding:44px 0;border-top:1px solid var(--line)}h2{font-size:30px;margin-bottom:20px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}.ph{height:128px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,var(--acc2),var(--card))}
+.b{padding:14px 16px 16px}.b h3{font-size:18px}.b p{margin:4px 0 12px;color:var(--mute);font-size:14px}.r{display:flex;justify-content:space-between;align-items:center}.r button{padding:8px 16px}
+.bar{position:sticky;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar span{font-weight:500}.bar .ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+footer{padding:26px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}label{font-size:14px;color:var(--mute)}
+.f{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:560px}.f .full{grid-column:1/-1}
+@media(max-width:560px){.f{grid-template-columns:1fr}nav a{display:none}}
+
+button,.btn{font-family:inherit;font-size:15px;font-weight:500}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.art{position:relative;aspect-ratio:1/.92;border-radius:28px;background:linear-gradient(145deg,var(--acc2),var(--card));border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.art .big{font-size:clamp(90px,16vw,150px);filter:drop-shadow(0 14px 18px rgba(0,0,0,.18))}
+.art .s{position:absolute;font-size:38px;animation:fl 6s ease-in-out infinite}.art .s1{top:10%;left:9%}.art .s2{bottom:12%;right:10%;animation-delay:1.5s}.art .s3{top:14%;right:12%;animation-delay:3s}
+.chip{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-size:13px;font-weight:500;box-shadow:0 8px 22px rgba(0,0,0,.1)}.chip.a{left:6%;bottom:8%}.chip.b{right:6%;top:46%}
+@keyframes fl{50%{transform:translateY(-10px)}}@media(prefers-reduced-motion:reduce){.art .s{animation:none}}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:6px 0 38px}.trust div{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-weight:500;font-size:15px}.trust div:before{content:"✓";display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--acc);color:var(--on);font-size:14px}
+.c{transition:transform .25s,box-shadow .25s}.c:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.ph{position:relative;height:150px}.ph span{font-size:64px;transition:transform .3s}.c:hover .ph span{transform:scale(1.12) rotate(-4deg)}
+.ph em{position:absolute;top:10px;left:10px;font-style:normal;font-size:12px;background:var(--acc);color:var(--on);padding:3px 10px;border-radius:999px}
+.st{color:#E9A82B;font-size:13px;margin-bottom:2px}.st small{color:var(--mute);margin-left:4px}
+.q{padding:20px;display:flex;flex-direction:column;gap:12px}.q p{margin:0;font-size:16px;color:var(--ink)}.q b{color:var(--mute);font-weight:500;font-size:14px}
+footer b{color:var(--ink)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.art{aspect-ratio:1/.7}}
+body{font-family:'Jost',system-ui,sans-serif}h1,h2,h3,nav b{font-family:'Marcellus',Georgia,serif}#gl{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;display:none}
+.gl #gl{display:block}.gl .art{display:none}
+.gl section{background:color-mix(in srgb,var(--bg) 78%,transparent)}
+#pg{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--acc);transform:scaleX(0);transform-origin:0 50%;z-index:9}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body><canvas id="gl" aria-hidden="true"></canvas><div id="pg"></div><div class="tag">Concept project by AuraCode Web Studio</div><div class="w"><nav><b>Marigold Suites</b><div><a href="#s">Rooms</a><a href="#book">Book</a></div></nav>
+<div class="hero"><div><h1>Rest well, wherever you travel.</h1><p>Comfortable rooms, a fresh breakfast and friendly service, five minutes from the city centre.</p><a class="btn" href="#book">Book a room</a></div>
+<div class="art"><span class="s s1">🛏️</span><span class="s s2">🍳</span><span class="s s3">🏊</span><span class="big">🏨</span><span class="chip a">★ 4.8 guest rating</span><span class="chip b">Free breakfast</span></div></div>
+<div class="trust"><div>Free breakfast</div><div>24-hour front desk</div><div>Free Wi-Fi and parking</div></div>
+<section id="s"><h2>Our rooms</h2><div class="g">
+<div class="c"><div class="ph"><span>🛏️</span></div><div class="b"><h3>Deluxe room</h3><p>King bed, city view. From Rs 9,000 per night</p></div></div>
+<div class="c"><div class="ph"><span>🛋️</span></div><div class="b"><h3>Family suite</h3><p>Two bedrooms, sitting area. From Rs 15,000 per night</p></div></div>
+<div class="c"><div class="ph"><span>💼</span></div><div class="b"><h3>Executive room</h3><p>Work desk and lounge access. From Rs 12,000 per night</p></div></div>
+<div class="c"><div class="ph"><span>👑</span></div><div class="b"><h3>Presidential suite</h3><p>Top floor, private dining. From Rs 28,000 per night</p></div></div></div></section>
+<section id="book"><h2>Book your stay</h2>
+<form id="f" class="f"><div><label for="nm">Your name</label><input id="nm" required></div><div><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+<div><label for="sv">Room type</label><select id="sv"><option>Deluxe room</option><option>Family suite</option><option>Executive room</option><option>Presidential suite</option></select></div>
+<div><label for="gs">Guests</label><select id="gs"><option>1</option><option>2</option><option>3</option><option>4</option><option>5 or more</option></select></div>
+<div><label for="dt">Check-in</label><input id="dt" type="date" required></div><div><label for="co">Check-out</label><input id="co" type="date" required></div>
+<div class="full"><button>Request booking</button></div><p class="full" id="ok" role="status" style="color:var(--acc);font-weight:500;margin:0"></p></form></section>
+<section><h2>What guests say</h2><div class="g">
+<div class="c q"><p>“Clean room, great breakfast and a very helpful front desk.”</p><b>Hamza, sample review</b></div>
+<div class="c q"><p>“Perfect for our family trip. The suite was spacious.”</p><b>Nadia, sample review</b></div>
+<div class="c q"><p>“Quiet, comfortable and close to everything.”</p><b>Bilal, sample review</b></div></div></section></div><footer><div class="w"><b>Front desk open 24 hours. Check-in from 2 pm, check-out by 12 pm.</b><br>Concept project by AuraCode Web Studio. Names, prices, reviews and items are sample content.</div></footer><script>const t0=new Date().toISOString().slice(0,10);dt.min=co.min=t0;dt.onchange=()=>{co.min=dt.value||t0};f.onsubmit=e=>{e.preventDefault();if(co.value<=dt.value){ok.textContent='Check-out must be after check-in.';return}const nt=Math.round((new Date(co.value)-new Date(dt.value))/864e5);ok.textContent='Thank you, '+nm.value+'. We have your request for a '+sv.value+' ('+nt+(nt==1?' night':' nights')+', '+gs.value+' guests) and will call you to confirm.';e.target.reset()};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){const els=document.querySelectorAll('section h2,.trust,.g,.f');els.forEach(e=>e.classList.add('rv'));const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1});els.forEach(e=>io.observe(e))}
+if(!window.THREE)return;
+let r;try{r=new THREE.WebGLRenderer({canvas:document.getElementById('gl'),alpha:true,antialias:true})}catch(e){return}
+document.documentElement.classList.add('gl');
+r.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);cam.position.z=9;
+scene.add(new THREE.AmbientLight(0xffffff,.7));
+const pl=new THREE.PointLight(0xffffff,1.4);pl.position.set(5,6,8);scene.add(pl);
+const pl2=new THREE.PointLight(0xffffff,.6);pl2.position.set(-6,-3,5);scene.add(pl2);
+const M=(c,ro,me)=>new THREE.MeshStandardMaterial({color:c,roughness:ro==null?.5:ro,metalness:me||0});
+const grp=new THREE.Group();let anim=()=>{},tilt=.2;
+
+const tw=new THREE.Group(),gold=M(0xE0B25A,.2,.9);
+[[2.2,.7],[1.9,.7],[1.6,.7],[1.3,.7],[1.0,.7]].forEach((a,i)=>{const b=new THREE.Mesh(new THREE.BoxGeometry(a[0],a[1],a[0]),M(0x24324E,.35,.4));b.position.y=-1.4+i*.75;tw.add(b);
+const e=new THREE.LineSegments(new THREE.EdgesGeometry(b.geometry),new THREE.LineBasicMaterial({color:0xE0B25A}));e.position.copy(b.position);tw.add(e)});
+const st=new THREE.Mesh(new THREE.OctahedronGeometry(.3),gold);st.position.y=2.6;tw.add(st);grp.add(tw);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(2.1,.03,10,100),gold);ring.rotation.x=Math.PI/2;ring.position.y=-1.7;grp.add(ring);
+const orb=new THREE.Group();
+for(let i=0;i<8;i++){const o=new THREE.Mesh(new THREE.OctahedronGeometry(.11),gold),a=i*.8,d=2.5+(i%3)*.35;o.position.set(Math.cos(a)*d,-1.6+i*.55,Math.sin(a)*d);orb.add(o)}
+grp.add(orb);tilt=.12;anim=(s,t)=>{orb.rotation.y=s*5+t*.4;st.rotation.y=t*1.5;ring.rotation.z=s*3+t*.2};
+scene.add(grp);
+const n=500,pos=new Float32Array(n*3);
+for(let i=0;i<n;i++){const d=6+Math.random()*9,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);pos[i*3]=d*Math.sin(b)*Math.cos(a);pos[i*3+1]=d*Math.sin(b)*Math.sin(a);pos[i*3+2]=d*Math.cos(b)}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xE0B25A,size:.05,transparent:true,opacity:.7}));scene.add(pts);
+function size(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+const bar=document.getElementById('pg'),hero=document.querySelector('.hero>div');
+let s=0,t=0;
+function frame(){
+const max=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=Math.min(1,Math.max(0,scrollY/max));
+s+=(p-s)*(reduce?1:.07);if(!reduce)t+=.01;
+const mob=innerWidth<760;
+grp.rotation.y=s*Math.PI*5+t*.3;grp.rotation.x=tilt+Math.sin(s*Math.PI*2)*.35;
+grp.position.x=mob?0:Math.cos(s*Math.PI*3)*2.8;grp.position.y=mob?1.9-s:0;
+grp.scale.setScalar((mob?.62:1)*(1+Math.sin(s*Math.PI)*.3));
+anim(s,t);pts.rotation.y=s*1.2+t*.02;cam.position.z=9-s*2.2;
+bar.style.transform='scaleX('+s+')';
+if(hero){const h=Math.min(1,scrollY/(innerHeight*.8));hero.style.transform='translateY('+(-h*50)+'px)';hero.style.opacity=1-h*.8}
+r.render(scene,cam);requestAnimationFrame(frame)}
+frame();
+})();
+</script>
+</body></html>
